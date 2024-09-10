@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # Set your Google Cloud Storage bucket name
-BUCKET_NAME="web-content-images"
+BUCKET_NAME="<bucket-name>"
 
 BUCKET_PATH="images/startup-kit/screenshots"
 # Set the local directory path
-LOCAL_DIR="/Users/shailenderchohan/projects/startupkit/static/screenshots"
+LOCAL_DIR="<local-dir>"
 
 # Set the date threshold in the format YYYY-MM-DD (e.g., 2023-01-01)
 THRESHOLD_DATE=$1

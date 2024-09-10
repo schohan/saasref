@@ -1,0 +1,177 @@
+import { describe, assert, expect, vi, it, beforeAll, afterAll } from 'vitest';
+import { SearchService } from '$lib/commonjs/SearchService.ts';
+import * as fs from 'fs';
+const fsPromises = fs.promises;
+
+//import { GenericDataService } from '../../../src/lib/commonjs/GenericDataService.ts';
+//import { GenericDataService } from '$lib/commonjs/GenericDataService.ts';
+
+const data = [
+	{
+		_id: '64879101f3bbbf5598d87bda',
+		tenant: 'startup',
+		category: 'setup',
+		subcategory: 'ideas',
+		aliases: 'ideas',
+		createdAt: '2023-06-12T21:41:21.207Z',
+		updatedAt: '2023-06-12T21:41:21.207Z'
+	},
+	{
+		_id: '64879101f3bbbf5598d87bdb',
+		tenant: 'startup',
+		category: 'setup',
+		subcategory: 'registration',
+		aliases: 'company registration',
+		createdAt: '2023-06-12T21:41:21.207Z',
+		updatedAt: '2023-06-12T21:41:21.207Z'
+	},
+	{
+		_id: '64879101f3bbbf5598d87bdc',
+		tenant: 'startup',
+		category: 'admin',
+		subcategory: 'domain name',
+		aliases: 'online address',
+		createdAt: '2023-06-12T21:41:21.207Z',
+		updatedAt: '2023-06-12T21:41:21.207Z'
+	},
+	{
+		_id: '64879101f3bbbf5598d87bdd',
+		tenant: 'startup',
+		category: 'admin',
+		subcategory: 'website',
+		aliases: 'online presence',
+		createdAt: '2023-06-12T21:41:21.207Z',
+		updatedAt: '2023-06-12T21:41:21.207Z'
+	},
+	{
+		_id: '64879101f3bbbf5598d87bde',
+		tenant: 'startup',
+		category: 'setup',
+		subcategory: 'rentals',
+		aliases: '',
+		createdAt: '2023-06-12T21:41:21.207Z',
+		updatedAt: '2023-06-12T21:41:21.207Z'
+	},
+	{
+		_id: '64879101f3bbbf5598d87bdf',
+		tenant: 'startup',
+		category: 'setup',
+		subcategory: 'shared office space',
+		aliases: '',
+		createdAt: '2023-06-12T21:41:21.207Z',
+		updatedAt: '2023-06-12T21:41:21.207Z'
+	},
+	{
+		_id: '64879101f3bbbf5598d87be0',
+		tenant: 'startup',
+		category: 'setup',
+		subcategory: 'virtual office',
+		aliases: 'virtual address',
+		createdAt: '2023-06-12T21:41:21.207Z',
+		updatedAt: '2023-06-12T21:41:21.207Z'
+	},
+	{
+		_id: '64879101f3bbbf5598d87be1',
+		tenant: 'startup',
+		category: 'setup',
+		subcategory: 'logo',
+		aliases: 'branding',
+		createdAt: '2023-06-12T21:41:21.207Z',
+		updatedAt: '2023-06-12T21:41:21.207Z'
+	},
+	{
+		_id: '64879101f3bbbf5598d87be2',
+		tenant: 'health',
+		category: 'content',
+		subcategory: 'writing',
+		aliases: 'copy',
+		createdAt: '2023-06-12T21:41:21.207Z',
+		updatedAt: '2023-06-12T21:41:21.207Z'
+	},
+	{
+		_id: '64879101f3bbbf5598d87be3',
+		tenant: 'health',
+		category: 'web',
+		subcategory: 'copywriting',
+		aliases: 'ads, home, about us',
+		createdAt: '2023-06-12T21:41:21.207Z',
+		updatedAt: '2023-06-12T21:41:21.207Z'
+	}
+];
+
+const dataForFileIndex = [
+	{
+		_id: '64879101f3bbbf5598d87bda',
+		tenant: 'test-tenant',
+		category: 'test-category',
+		subcategory: 'test-subcategory',
+		aliases: 'test tag',
+		createdAt: '2023-06-12T21:41:21.207Z',
+		updatedAt: '2023-06-12T21:41:21.207Z'
+	}
+];
+
+const indexFile = './fuse/fuse-index-test.json';
+let searchService: SearchService;
+
+beforeAll(async () => {
+	searchService = new SearchService(['_id', 'tenant', 'category', 'subcategory'], data);
+});
+
+afterAll(async () => {
+	// remove createed index
+	//await searchService.removeIndex(indexFile);
+});
+
+describe('Find all categories for startup tenant', () => {
+	it('should expect 8 docs for tenant "startup"', () => {
+		const res = searchService.search({ tenant: 'startup' });
+		expect(res.length).toEqual(8);
+		//console.log('startup tenant has these categories ' + res.length);
+	});
+
+	it('should expect 2 tenants for tenant-category: "startup-admin" ', () => {
+		const res = searchService.search({
+			$and: [{ tenant: 'startup' }, { category: 'admin' }]
+		});
+		expect(res[0]?.item.category).equals('admin');
+	});
+
+	it('should expect 1 subcategory of "copywriting" under "health" tenenat and its category is "web" ', () => {
+		const res = searchService.search({
+			$and: [{ tenant: 'health' }, { subcategory: 'copywriting' }]
+		});
+		expect(res[0]?.item.category).equals('web');
+	});
+});
+
+describe('Write index to file', () => {
+	const newSearchService = new SearchService(
+		['_id', 'tenant', 'category', 'subcategory'],
+		dataForFileIndex
+	);
+
+	it('should throw error if index file name is not valid', async () => {
+		await expect(newSearchService.writeIndexToFile()).rejects.toThrowError(/^Could not/);
+	});
+
+	it('should be able to save index to a file', async () => {
+		await expect(newSearchService.writeIndexToFile()).rejects.toThrowError(/^Could not/);
+		const fileSpy = vi.spyOn(newSearchService, 'writeIndexToFile');
+		expect(fileSpy).not.toHaveBeenCalled();
+		newSearchService.writeIndexToFile(indexFile);
+		expect(fileSpy).toHaveBeenCalled();
+	});
+});
+
+/* describe('Read index from a file and use it', () => {
+	const newSearchService = new SearchService();
+
+	 it('Search index loaded from a file', () => {
+		const newSearchService = new SearchService();
+		newSearchService.loadIndexFromFile(indexFile);
+
+		const res = newSearchService.search('test*');
+		expect(res[0]?.item.category).equals('test-category');
+	}); 
+}); */

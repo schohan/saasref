@@ -1,0 +1,96 @@
+[
+	{
+		"uid": "product-development",
+		"title": "Product Development",
+		"subcategories": [
+			{ "uid": "minimum-viable-product", "title": "Minimum Viable Product (MVP)" },
+			{ "uid": "user-experience-design", "title": "User Experience (UX) Design" },
+			{ "uid": "feature-prioritization", "title": "Feature Prioritization" },
+			{ "uid": "quality-assurance", "title": "Quality Assurance" },
+			{ "uid": "continuous-improvement", "title": "Continuous Improvement" }
+		]
+	},
+	{
+		"uid": "market-research",
+		"title": "Market Research",
+		"subcategories": [
+			{ "uid": "target-audience-analysis", "title": "Target Audience Analysis" },
+			{ "uid": "competitor-analysis", "title": "Competitor Analysis" },
+			{ "uid": "market-trends", "title": "Market Trends" },
+			{ "uid": "opportunity-identification", "title": "Opportunity Identification" }
+		]
+	},
+	{
+		"uid": "business-strategy",
+		"title": "Business Strategy",
+		"subcategories": [
+			{ "uid": "business-model", "title": "Business Model" },
+			{ "uid": "revenue-streams", "title": "Revenue Streams" },
+			{ "uid": "pricing-strategy", "title": "Pricing Strategy" },
+			{ "uid": "monetization", "title": "Monetization" },
+			{ "uid": "scalability", "title": "Scalability" }
+		]
+	},
+	{
+		"uid": "online-presence",
+		"title": "Online Presence",
+		"subcategories": [
+			{ "uid": "website-development", "title": "Website Development" },
+			{ "uid": "social-media-strategy", "title": "Social Media Strategy" },
+			{ "uid": "content-marketing", "title": "Content Marketing" },
+			{ "uid": "search-engine-optimization-seo", "title": "Search Engine Optimization (SEO)" },
+			{ "uid": "online-branding", "title": "Online Branding" }
+		]
+	},
+	{
+		"uid": "customer-engagement",
+		"title": "Customer Engagement",
+		"subcategories": [
+			{ "uid": "customer-support", "title": "Customer Support" },
+			{ "uid": "user-feedback", "title": "User Feedback" },
+			{ "uid": "community-building", "title": "Community Building" },
+			{ "uid": "customer-retention", "title": "Customer Retention" },
+			{ "uid": "user-analytics", "title": "User Analytics" }
+		]
+	},
+	{
+		"uid": "legal-compliance",
+		"title": "Legal and Compliance",
+		"subcategories": [
+			{ "uid": "business-registration", "title": "Business Registration" },
+			{ "uid": "intellectual-property", "title": "Intellectual Property" },
+			{ "uid": "data-privacy", "title": "Data Privacy" },
+			{ "uid": "terms-of-service", "title": "Terms of Service" }
+		]
+	},
+	{
+		"uid": "financial-management",
+		"title": "Financial Management",
+		"subcategories": [
+			{ "uid": "financial-planning", "title": "Financial Planning" },
+			{ "uid": "budgeting", "title": "Budgeting" },
+			{ "uid": "cash-flow-management", "title": "Cash Flow Management" },
+			{ "uid": "financial-reporting", "title": "Financial Reporting" }
+		]
+	},
+	{
+		"uid": "team-building",
+		"title": "Team Building",
+		"subcategories": [
+			{ "uid": "recruitment", "title": "Recruitment" },
+			{ "uid": "team-collaboration", "title": "Team Collaboration" },
+			{ "uid": "skill-diversity", "title": "Skill Diversity" },
+			{ "uid": "leadership-development", "title": "Leadership Development" }
+		]
+	},
+	{
+		"uid": "technology-infrastructure",
+		"title": "Technology Infrastructure",
+		"subcategories": [
+			{ "uid": "hosting-and-servers", "title": "Hosting and Servers" },
+			{ "uid": "security-measures", "title": "Security Measures" },
+			{ "uid": "data-backup", "title": "Data Backup" },
+			{ "uid": "scalability-planning", "title": "Scalability Planning" }
+		]
+	}
+]

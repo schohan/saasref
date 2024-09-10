@@ -1,0 +1,6 @@
+{
+	"DB_URL": "",
+	"LOCATION": "./dbdump",
+	"DB_NAME": "webapp_prod",
+	"FILENAME_PREFIX": "webappProdDb"
+}

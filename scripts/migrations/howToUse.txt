@@ -1,0 +1,24 @@
+1. Globally install the migrate-mongo node module
+    npm install -g migrate-mongo
+
+2. Create a new migration
+    - cd into the "scripts/migrations" folder
+    - Run the command, 
+    
+    ```
+    migrate-mongo create (name or description here)
+    ```
+
+    - A new file will be created in the migrations folder
+    - Edit the file, with up function being the changes you wish to change
+    - And down function reverting the changes (if possible)
+
+3. Run a migration
+    - To check which migrations are applied, run migrate-mongo status
+    - Any migrations with the status "PENDING" will run with the command, 
+        "$ migrate-mongo up", or 
+        "$ migrate-mongo down"
+    - Running migrate-mongo up will run the up functions, and migrate-mongo down will run the down functions
+    - If an error occurs, it will stop the script and won't continue with anymore pending migrations
+    - When a up migration is completed, it will state the time of use in the Applied At box in status
+    - When reverted with a down migration, the status of it will return to "PENDING"

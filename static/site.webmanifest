@@ -1,0 +1,8 @@
+{
+	"name": "Startp Sparks",
+	"short_name": "StartpSparks",
+	"icons": [{ "src": "/logo.jpeg", "sizes": "192x192", "type": "image/jpeg" }],
+	"theme_color": "#ffffff",
+	"background_color": "#ffffff",
+	"display": "standalone"
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guidebook Tutorial</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles */
+    </style>
+</head>
+<body class="font-sans bg-gray-100">
+    <div class="container mx-auto px-4 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
+            <div class="md:col-span-3">
+                <!-- Table of Contents -->
+                <div class="sticky top-8">
+                    <nav class="space-y-4">
+                        <h2 class="text-lg font-semibold mb-2">Table of Contents</h2>
+                        <ul class="space-y-2">
+                            <li><a href="#chapter1">Chapter 1: Introduction</a></li>
+                            <li><a href="#chapter2">Chapter 2: Getting Started</a></li>
+                            <li><a href="#chapter3">Chapter 3: Advanced Techniques</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="md:col-span-6">
+                <!-- Main Content -->
+                <article class="prose lg:prose-lg">
+                    <h1 id="chapter1">Chapter 1: Introduction</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <!-- More content goes here -->
+                </article>
+            </div>
+            <div class="md:col-span-3">
+                <!-- Additional Content -->
+                <div class="sticky top-8">
+                    <div class="bg-white rounded-lg shadow p-4">
+                        <h2 class="text-lg font-semibold mb-2">Related Links</h2>
+                        <ul class="space-y-2">
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 2</a></li>
+                            <li><a href="#">Link 3</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+	"short_name": "StartupKit",
+	"name": "StartupKit",
+	"icons": [
+		{
+			"src": "./logo.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"start_url": "https://StartupKit.com?utm_source=homescreen",
+	"background_color": "white",
+	"Theme_color": "",
+	"display": "standalone"
+}

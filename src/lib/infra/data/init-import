@@ -1,0 +1,3 @@
+#!/bin/bash
+
+mongoimport --uri "mongodb://localhost:27017/toolkit" -c "categories" --file "./json/categories.json" --mode "upsert" --maintainInsertionOrder --drop --jsonArray

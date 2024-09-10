@@ -1,0 +1,5 @@
+{
+    "html.format.wrapAttributes": "auto",
+    "prettier.htmlWhitespaceSensitivity": "ignore",
+    "frontMatter.content.pageFolders": []
+}

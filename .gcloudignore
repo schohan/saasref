@@ -1,0 +1,10 @@
+.history
+.vscode
+node_modules
+*.log
+logs
+localdb
+.gitignore
+.gcloudignore
+!dist/
+tempdata

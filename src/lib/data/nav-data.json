@@ -1,0 +1,18 @@
+{
+	"logo": {
+		"img": "/logo.jpeg",
+		"text": "TurnSolo"
+	},
+	"items": {
+		"common": [
+			{
+				"text": "Home",
+				"href": "/"
+			},
+			{
+				"text": "Tools & Services",
+				"href": "/startup-tools"
+			}
+		]
+	}
+}

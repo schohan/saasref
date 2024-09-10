@@ -1,0 +1,296 @@
+[
+    {
+        "tenant": "startup",
+        "category": "setup",
+        "subcategory": "ideas",
+        "aliases": "ideas"
+    },
+    {
+        "tenant": "startup",
+        "category": "setup",
+        "subcategory": "registration",
+        "aliases": "company registration"
+    },
+    {
+        "tenant": "startup",
+        "category": "setup",
+        "subcategory": "domain name",
+        "aliases": "online address"
+    },
+    {
+        "tenant": "startup",
+        "category": "setup",
+        "subcategory": "website",
+        "aliases": "online presence"
+    },
+    {
+        "tenant": "startup",
+        "category": "setup",
+        "subcategory": "rentals",
+        "aliases": ""
+    },
+    {
+        "tenant": "startup",
+        "category": "setup",
+        "subcategory": "shared office space",
+        "aliases": ""
+    },
+    {
+        "tenant": "startup",
+        "category": "setup",
+        "subcategory": "virtual office",
+        "aliases": "virtual address"
+    },
+    {
+        "tenant": "startup",
+        "category": "setup",
+        "subcategory": "logo",
+        "aliases": "branding"
+    },
+    {
+        "tenant": "startup",
+        "category": "content",
+        "subcategory": "writing",
+        "aliases": ""
+    },
+    {
+        "tenant": "startup",
+        "category": "content",
+        "subcategory": "copywriting",
+        "aliases": ""
+    },
+    {
+        "tenant": "startup",
+        "category": "content",
+        "subcategory": "video",
+        "aliases": ""
+    },
+    {
+        "tenant": "startup",
+        "category": "content",
+        "subcategory": "research",
+        "aliases": ""
+    },
+    {
+        "tenant": "startup",
+        "category": "content",
+        "subcategory": "templates",
+        "aliases": ""
+    },
+    {
+        "tenant": "startup",
+        "category": "content",
+        "subcategory": "stock content",
+        "aliases": ""
+    },
+    {
+        "tenant": "startup",
+        "category": "online",
+        "subcategory": "website",
+        "aliases": ""
+    },
+    {
+        "tenant": "startup",
+        "category": "online",
+        "subcategory": "social media",
+        "aliases": ""
+    },
+    {
+        "tenant": "startup",
+        "category": "online",
+        "subcategory": "app builders",
+        "aliases": "no code, low code"
+    },
+    {
+        "tenant": "startup",
+        "category": "online",
+        "subcategory": "pricing",
+        "aliases": ""
+    },
+    {
+        "tenant": "startup",
+        "category": "online",
+        "subcategory": "payments",
+        "aliases": ""
+    },
+    {
+        "tenant": "startup",
+        "category": "online",
+        "subcategory": "ecommerce",
+        "aliases": ""
+    },
+    {
+        "tenant": "startup",
+        "category": "online",
+        "subcategory": "link in bio",
+        "aliases": ""
+    },
+    {
+        "tenant": "startup",
+        "category": "online",
+        "subcategory": "prototype",
+        "aliases": ""
+    },
+    {
+        "tenant": "startup",
+        "category": "online",
+        "subcategory": "UI/UX Desgin",
+        "aliases": "design tools"
+    },
+    {
+        "tenant": "startup",
+        "category": "online",
+        "subcategory": "development",
+        "aliases": "hiring, contractors, freelancers"
+    },
+    {
+        "tenant": "startup",
+        "category": "online",
+        "subcategory": "project management",
+        "aliases": ""
+    },
+    {
+        "tenant": "startup",
+        "category": "online",
+        "subcategory": "website templates",
+        "aliases": ""
+    },
+    {
+        "tenant": "startup",
+        "category": "online",
+        "subcategory": "marketplaces",
+        "aliases": ""
+    },
+    {
+        "tenant": "startup",
+        "category": "online",
+        "subcategory": "automation",
+        "aliases": ""
+    },
+    {
+        "tenant": "startup",
+        "category": "online",
+        "subcategory": "hosting",
+        "aliases": ""
+    },
+    {
+        "tenant": "startup",
+        "category": "online",
+        "subcategory": "cloud services",
+        "aliases": ""
+    },
+    {
+        "tenant": "startup",
+        "category": "online",
+        "subcategory": "SEO",
+        "aliases": ""
+    },
+    {
+        "tenant": "startup",
+        "category": "marketing",
+        "subcategory": "newsletters",
+        "aliases": ""
+    },
+    {
+        "tenant": "startup",
+        "category": "marketing",
+        "subcategory": "email",
+        "aliases": ""
+    },
+    {
+        "tenant": "startup",
+        "category": "marketing",
+        "subcategory": "landing page",
+        "aliases": ""
+    },
+    {
+        "tenant": "startup",
+        "category": "marketing",
+        "subcategory": "analytics",
+        "aliases": ""
+    },
+    {
+        "tenant": "startup",
+        "category": "marketing",
+        "subcategory": "launch",
+        "aliases": ""
+    },
+    {
+        "tenant": "startup",
+        "category": "media",
+        "subcategory": "video tools",
+        "aliases": ""
+    },
+    {
+        "tenant": "startup",
+        "category": "media",
+        "subcategory": "audio tools",
+        "aliases": ""
+    },
+    {
+        "tenant": "startup",
+        "category": "media",
+        "subcategory": "podcasting tools",
+        "aliases": ""
+    },
+    {
+        "tenant": "startup",
+        "category": "media",
+        "subcategory": "templates",
+        "aliases": ""
+    },
+    {
+        "tenant": "startup",
+        "category": "communication",
+        "subcategory": "notifications",
+        "aliases": ""
+    },
+    {
+        "tenant": "startup",
+        "category": "communication",
+        "subcategory": "mailing",
+        "aliases": ""
+    },
+    {
+        "tenant": "startup",
+        "category": "communication",
+        "subcategory": "phone services",
+        "aliases": ""
+    },
+    {
+        "tenant": "startup",
+        "category": "communication",
+        "subcategory": "email",
+        "aliases": ""
+    },
+    {
+        "tenant": "startup",
+        "category": "operations",
+        "subcategory": "admin",
+        "aliases": ""
+    },
+    {
+        "tenant": "startup",
+        "category": "operations",
+        "subcategory": "organize",
+        "aliases": ""
+    },
+    {
+        "tenant": "startup",
+        "category": "human resources",
+        "subcategory": "hiring",
+        "aliases": ""
+    },
+    {
+        "tenant": "startup",
+        "category": "human resources",
+        "subcategory": "payroll",
+        "aliases": ""
+    },
+    {
+        "tenant": "startup",
+        "category": "engagements",
+        "subcategory": "community",
+        "aliases": ""
+    }
+]
